@@ -1,5 +1,5 @@
 body {
-    font-family: 'Times New Roman', serif; /* Changed font to Times New Roman */
+    font-family: 'Times New Roman', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -9,9 +9,23 @@ body {
 header {
     background: #375136; /* Dark olive green */
     color: #fff;
-    padding: 20px 0; /* Increased padding */
+    padding: 20px 0;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.profile-pic {
+    width: 120px; /* Profile picture size */
+    height: 120px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 10px; /* Space below the image */
+}
+
+.name {
+    font-size: 2em; /* Adjust font size for name */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 nav ul {
@@ -48,14 +62,6 @@ footer {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for footer */
 }
 
-.profile-pic {
-    width: 120px; /* Slightly larger profile picture */
-    height: 120px;
-    border-radius: 50%;
-    vertical-align: middle;
-    margin-right: 15px;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -73,11 +79,9 @@ input[type="submit"] {
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Pointer cursor */
-    width: 100%; /* Full-width button */
 }
 
-input[type="submit"]:hover,
-input[type="submit"]:active {
+input[type="submit"]:hover {
     background-color: #4c6b50; /* Lighter on hover */
 }
 
@@ -111,46 +115,29 @@ section#skills .skill-bar span {
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for skill text */
 }
 
-/* Media queries for mobile responsiveness */
+/* Media Queries for responsiveness */
 @media (max-width: 768px) {
-    header {
-        padding: 10px 0; /* Reduce padding for smaller screens */
+    .profile-pic {
+        width: 80px; /* Smaller profile picture on mobile */
+        height: 80px;
+    }
+
+    .name {
+        font-size: 1.5em; /* Adjust font size for name on mobile */
     }
 
     nav ul li {
-        display: block; /* Stack links vertically */
-        margin: 10px 0; /* Space between links */
-    }
-
-    section {
-        padding: 10px; /* Reduce padding */
-    }
-
-    h1 {
-        font-size: 1.5em; /* Adjust font size for headings */
-    }
-
-    .profile-pic {
-        width: 80px; /* Smaller profile picture */
-        height: 80px;
+        display: block; /* Stack navigation links on mobile */
+        margin: 5px 0; /* Space between links */
     }
 
     input[type="text"],
     input[type="email"],
     textarea {
-        font-size: 1em; /* Adjust input font size for easier readability */
+        font-size: 0.9em; /* Adjust font size for inputs */
     }
 
     input[type="submit"] {
-        width: 100%; /* Full-width button on smaller screens */
+        padding: 8px 10px; /* Smaller button on mobile */
     }
-
-    section#skills ul li {
-        flex-direction: column; /* Stack skill names and bars vertically on smaller screens */
-    }
-}
-
-img {
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
 }
