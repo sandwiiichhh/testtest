@@ -1,0 +1,156 @@
+body {
+    font-family: 'Times New Roman', serif; /* Changed font to Times New Roman */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; /* Beige background */
+}
+
+header {
+    background: #375136; /* Dark olive green */
+    color: #fff;
+    padding: 20px 0; /* Increased padding */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em; /* Increased font size */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Text shadow for links */
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background: #4b8f3d; /* Dark olive green for sections */
+    color: white; /* Text color for better contrast */
+    border-radius: 5px; /* Rounded corners */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for section text */
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333; /* Dark background */
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Text shadow for footer */
+}
+
+.profile-pic {
+    width: 120px; /* Slightly larger profile picture */
+    height: 120px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+input[type="submit"] {
+    background-color: #375136; /* Dark olive green */
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    width: 100%; /* Full-width button */
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+    background-color: #4c6b50; /* Lighter on hover */
+}
+
+/* Skill bar styles */
+section#skills ul {
+    list-style-type: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+section#skills ul li {
+    padding: 10px 0; /* Adds space between skills */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center align items vertically */
+}
+
+section#skills .skill-bar {
+    background: #4caf50; /* Green color for the bar */
+    height: 20px; /* Height of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    margin-left: 20px; /* Space between skill name and bar */
+    position: relative; /* Position relative for the inner text */
+    flex-grow: 1; /* Allow the bar to take remaining space */
+}
+
+section#skills .skill-bar span {
+    position: absolute; /* Positioning for the text inside the bar */
+    width: 100%;
+    text-align: center; /* Center align the text */
+    color: white; /* White text for contrast */
+    font-weight: bold; /* Bold text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow for skill text */
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    nav ul li {
+        display: block; /* Stack links vertically */
+        margin: 10px 0; /* Space between links */
+    }
+
+    section {
+        padding: 10px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust font size for headings */
+    }
+
+    .profile-pic {
+        width: 80px; /* Smaller profile picture */
+        height: 80px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 1em; /* Adjust input font size for easier readability */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Full-width button on smaller screens */
+    }
+
+    section#skills ul li {
+        flex-direction: column; /* Stack skill names and bars vertically on smaller screens */
+    }
+}
+
+img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+}
